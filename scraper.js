@@ -32,7 +32,7 @@ const puppeteer = require('puppeteer');
     await page.waitForSelector('#result-stats');
 
     // take the screenshot
-    await page.screenshot({ path: `./screenshots/page.png` });
+    await page.screenshot({ path: './screenshots/page.png' });
 
     // map through all anchors "a's" and return "href" and link text
     const links = await page.evaluate(() =>
