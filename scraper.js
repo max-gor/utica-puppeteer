@@ -19,11 +19,11 @@ const puppeteer = require('puppeteer');
     });
 
     // input with name "q"
-    await page.waitForSelector('input[name=q]');
+    await page.waitForSelector('textarea[name=q]');
 
     // type the phrase
     const phrase = 'Utica University';
-    await page.type('input[name=q]', phrase);
+    await page.type('textarea[name=q]', phrase);
 
     //
     await page.keyboard.press('Enter');
